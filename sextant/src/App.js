@@ -2,23 +2,19 @@
 import './App.css';
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
+import IPAddress from './components/IPAddress';
 
 function App() {
   return (
     <div>
       <Banner title='Sextant'/>
-      <Exhibit heading="This is a card one" >
-        child of card one
+      <Exhibit heading="IPv4 Address" >
+        <IPAddress url="https://api.ipify.org?format=json" />
       </Exhibit>
-      <Exhibit heading="This is a card two" >
-        child of card two
+      <Exhibit heading="IPv6 Address" >
+      <IPAddress url="https://api64.ipify.org?format=json"/>
       </Exhibit>
-      <Exhibit heading="This is a card three" >
-        child of card three
-      </Exhibit>
-      <Exhibit heading="This is a card four" >
-        child of card four
-      </Exhibit>
+     
     </div>
   );
 }
