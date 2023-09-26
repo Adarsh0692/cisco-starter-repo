@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Banner from './components/Banner';
+import Exhibit from './components/Exhibit';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner title='Sextant'/>
+      <Exhibit heading="This is a card one" >
+        child of card one
+      </Exhibit>
+      <Exhibit heading="This is a card two" >
+        child of card two
+      </Exhibit>
+      <Exhibit heading="This is a card three" >
+        child of card three
+      </Exhibit>
+      <Exhibit heading="This is a card four" >
+        child of card four
+      </Exhibit>
     </div>
   );
 }
